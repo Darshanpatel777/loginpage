@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bb"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignIn">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your credential for Login"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:gravity="center"
+        app:boxStrokeColor="#F00808"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="25sp"
+        android:layout_marginLeft="25sp"
+        app:startIconDrawable="@drawable/user"
+        app:boxCornerRadiusBottomStart="20sp"
+        app:boxCornerRadiusTopEnd="20sp"
+        app:boxStrokeWidth="2dp"
+        app:endIconMode="none"
+        app:boxCornerRadiusTopStart="20sp"
+        app:boxCornerRadiusBottomEnd="20sp">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/username"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:gravity="center"
+        app:boxStrokeColor="#F00808"
+        android:textColorHint="@color/white"
+        android:layout_marginRight="25sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25sp"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/padlock"
+        app:boxCornerRadiusBottomStart="20sp"
+        app:boxCornerRadiusTopEnd="20sp"
+        app:boxStrokeWidth="2dp"
+        app:boxCornerRadiusTopStart="20sp"
+        app:boxCornerRadiusBottomEnd="20sp">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/loginuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:text="Login Now"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"/>
+
+    <TextView
+        android:id="@+id/create"
+        android:layout_margin="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E91E63"
+        android:text="Create Account ?"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password ?"
+        android:gravity="center"
+        android:layout_margin="70sp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+
+
+</LinearLayout>
